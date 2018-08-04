@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+<title>
+secondpage
+</title>
+<style>
+.pagin{
+display:inline-block;
+background-color:white;
+}
+.pagin a{
+padding:0px 20px;
+border:1px solid black;
+color:black;
+text-decoration:none;
+}
+.pagin a:first-child{
+border-top-left-radius:2px;
+border-bottom-left-radius:2px;
+}
+.pagin a:last-child{
+border-top-right-radius:2px;
+border-bottom-right-radius:2px;
+}
+.pagin a:hover:not(.active){
+background-color:grey;
+}
+ol{
+counter-reset:section;
+list-style-type:none;
+}
+#li2::before{
+counter-increment: section;
+content:counters(section,".") ;
+}
+.bordr{
+border:12px solid black;
+border-radius:8px;
+}
+table,td{
+padding:5px;
+margin:3px;
+}
+li.dropdown a{
+text-decoration:none;
+}
+#li1 form{
+display:inline;
+float:right;
+}
+p{
+text-align: justify;
+}
+fieldset{
+padding-top:0em;
+}
+#ul1{
+list-style-type:none;
+background-color:black;
+padding:0px;
+margin:0px;
+}
+#li1{
+display:inline;
+}
+#li1 #a1{
+padding:16px;
+font-family:verdana;
+color:white;
+text-decoration:none;
+text-align:center;
+}
+#li1 #a1:hover{
+background-color:grey;
+padding:12px;
+}
+.dropdown:hover .drop-content{
+display:block;
+background-color:black;
+width:60px;
+text-align:right;
+}
+li.dropdown{
+display:inline-block;
+float:right;
+background-color:green;
+width:60px;
+}
+@media screen and (max-width:600px){
+#li1 #a1{
+display:block;
+background-color:red;
+}
+#li1 input{
+float:left;
+padding:4px;
+}
+#li1 form{
+display:inline;
+float:left;
+margin-top:3px;
+}
+li.dropdown{
+float:right;
+display:block;
+padding:2px;
+margin-top:2px;
+}
+li.dropdown .dropbtn{
+float:right;
+}
+.dropdown:hover .drop-content{
+display:block;
+background-color:black;
+width:100%;
+text-align:right;
+}
+}
+.dropbtn{
+display:inline-block;
+background-color:pink;
+line-height:24px;
+width:100%;
+text-align:center;
+margin-top:auto;
+margin-bottom:auto;
+margin-right:auto;
+margin-left:auto;
+}
+.drop-content{
+display:none;
+}
+.dropdown .drop-content a{
+display:block;
+font-size:20px;
+margin:0px;
+color:white;
+text-decoration:none;
+}
+.drop-content a:hover{
+background-color:grey;
+margin:0px;
+}
+input[type=text]:focus{
+width:80px; 
+transition: width 1s;
+transition-timing-function: ease-in;
+}
+input[type=text]{
+border:2px solid red;
+border-radius:4px;
+width:40px;
+height:8px;
+background-image:url('icon.png');
+background-repeat:no-repeat;
+background-size:30px 30px;
+background-position:0px 0px;
+padding:12px 15px 2px 40px;
+}
+</style>
+</head>
+<body>
+<ul id="ul1" class="bordr">
+<li id="li1"><a href="a.com" id="a1">Home</a></li>
+<li id="li1"><a href="b.com" id="a1">Learn</a></li>
+<li id="li1"><a href="c.com" id="a1">About us</a></li>
+<li id="li1"><a href="ask.htm" id="a1">Ask</a></li>
+
+<li class="dropdown"><a href="javascript:void(0)" class="dropbtn" style="height:30px">logout</a>
+<div class="drop-content" >
+<a href="a.htm">log out</a>
+<a href="b.htm">log in </a>
+<a href="c.htm">log</a>
+<a href="">jk</a>
+</div>
+</li>
+<li id="li1"> <form>
+<input type="text" placeholder="search text here">
+</form>
+</li>
+</ul>
+<body>
+<table>
+<tr>
+<td>
+<p>
+Stars are the most widely recognized astronomical objects, and represent the most fundamental building blocks of galaxies. The age, distribution, and composition of the stars in a galaxy trace the history, dynamics, and evolution of that galaxy. Moreover, stars are responsible for the manufacture and distribution of heavy elements such as carbon, nitrogen, and oxygen, and their characteristics are intimately tied to the characteristics of the planetary systems that may coalesce about them. Consequently, the study of the birth, life, and death of stars is central to the field of astronomy.
+</p>
+<p>
+A star the size of our Sun requires about 50 million years to mature from the beginning of the collapse to adulthood. Our Sun will stay in this mature phase (on the main sequence as shown in the Hertzsprung-Russell Diagram) for approximately 10 billion years.
+
+Stars are fueled by the nuclear fusion of hydrogen to form helium deep in their interiors. The outflow of energy from the central regions of the star provides the pressure necessary to keep the star from collapsing under its own weight, and the energy by which it shines.
+
+As shown in the Hertzsprung-Russell Diagram, Main Sequence stars span a wide range of luminosities and colors, and can be classified according to those characteristics. The smallest stars, known as red dwarfs, may contain as little as 10% the mass of the Sun and emit only 0.01% as much energy, glowing feebly at temperatures between 3000-4000K. Despite their diminutive nature, red dwarfs are by far the most numerous stars in the Universe and have lifespans of tens of billions of years.
+
+
+On the other hand, the most massive stars, known as hypergiants, may be 100 or more times more massive than the Sun, and have surface temperatures of more than 30,000 K. Hypergiants emit hundreds of thousands of times more energy than the Sun, but have lifetimes of only a few million years. Although extreme stars such as these are believed to have been common in the early Universe, today they are extremely rare - the entire Milky Way galaxy contains only a handful of hypergiants
+</p>
+<div id="div1">
+<img src="imag1.jpg"></img>
+<figcaption>
+Fig 1. galaxy
+</figcaption>
+<p>
+In general, the larger a star, the shorter its life, although all but the most massive stars live for billions of years. When a star has fused all the hydrogen in its core, nuclear reactions cease. Deprived of the energy production needed to support it, the core begins to collapse into itself and becomes much hotter. Hydrogen is still available outside the core, so hydrogen fusion continues in a shell surrounding the core. The increasingly hot core also pushes the outer layers of the star outward, causing them to expand and cool, transforming the star into a red giant.
+
+If the star is sufficiently massive, the collapsing core may become hot enough to support more exotic nuclear reactions that consume helium and produce a variety of heavier elements up to iron. However, such reactions offer only a temporary reprieve. Gradually, the star's internal nuclear fires become increasingly unstable - sometimes burning furiously, other times dying down. These variations cause the star to pulsate and throw off its outer layers, enshrouding itself in a cocoon of gas and dust. What happens next depends on the size of the core.
+</p>
+</div>
+</td>
+
+<td style="width:300px;height:500px;padding-top:0em;padding-bottom:13em;margin-left:auto;margin-right:auto;display:block">
+<ol>
+<fieldset style="margin-left:auto;margin-right:auto;display:block">
+<legend>hot topics</legend>
+<marquee>
+<li id="li2"><a href=""> innovation center</a>
+<ol>
+<li id="li2"><a href="">upcoming events</a>
+<ol>
+<li id="li2">
+<a href="">
+stackathon
+</a>
+</li>
+</ol>
+</li>
+<li id="li2"><a href="">registeration for hackathon</li>
+</ol>
+<li id="li2"><a href=""> gallery</a>
+<li id="li2"><a href=""> announcements</a>
+<li id=li2><a href="">news</a>
+</marquee>
+</fieldset>
+</ol>
+</td>
+</tr>
+</table>
+<div class="pagin">
+<a href="#">
+&laquo;
+</a>
+<a href="#">
+1
+</a>
+<a href="#">
+2
+</a>
+<a href="#">
+3
+</a>
+<a href="#">
+4
+</a>
+<a href="#">
+&raquo;
+</a>
+</div> 
+</body>
+</html>
