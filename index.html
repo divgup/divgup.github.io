@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
@@ -6,27 +6,47 @@ my resume
 </title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <style>
-@keyframes inc{
-0% {opacity:0;}
-25% {opacity:0.4;}
-100% {opacity:1;}
+.btn{
+position: relative;
+height:80px;
+width:120px;
+background-color:#FF33AF;
+border:2px solid pink;
+border-radius:2px;
+cursor:pointer;
+padding:10px;
+margin-right:3px;
 }
-.mod{
-margin-right:245px;
-color:white;
+.btn:after{
+position: absolute;
+content:"";
+display:block;
+float:left;
+padding-top:63%;
+padding-left:100%;
+margin-left:-13px;
+margin-top:-60%;
+opacity:0;
+transition:0.8s;
+background-color:#FF336B ;
+color:black;
 }
-#c2{
-animation-name:inc;
-animation-duration:4s;
+.btn:active:after{
+opacity:1;
+transition:0s;
+padding:0;
+margin:0;
 }
 .socialicons{
 height:20px;
 }
 .socialicons a{
 margin-right:20px;
+}
+.socialicons i{
 color:grey;
 }
-.socialicons a:hover{
+.socialicons i:hover{
 color:black;
 }
 .button{
@@ -43,12 +63,16 @@ text-decoration:none;
 font-size:17px;
 text-align:center;
 }
-.button a:hover{
+.button i:hover{
 color:blue;
 }
 ul{
 display:inline-block;
 list-style-type:none;
+}
+.center p{
+text-align:center;
+color:black;
 }
 li{
 float:left;
@@ -94,6 +118,12 @@ display:none;
 }
 .phone a:hover{
 }
+@media screen and (min-width:700px){
+.flex-container>div{
+margin-left:auto;
+margin-right:auto;
+}
+}
 </style>
 </head>
 <body>
@@ -102,13 +132,10 @@ display:none;
 Divanshu gupta
 </li>
 <li id="li1">
-<a href="exp.htm">EXPERIENCE</a>
-</li>
-<li id="li1">
 <a href="#c1">EDUCATION</a>
 </li>
 <li id="li1">
-<a href="c.htm">SKILLS</a>
+<a href="#c2">SKILLS</a>
 </li>
 <li id="li1">
 <a href="contact.htm">CONTACT</a>
@@ -163,8 +190,8 @@ Date of birth
 </div>
 </div>
 </div>
-<div id="c1" style="text-align:center;font-size:20px"><i class="fas fa-graduation-cap">Education</i></div>
-<div style="background-color:blue;float:right;width:80%">
+<div id="c1" style="text-align:center;font-size:20px;width:30%;height:20px"><i class="fas fa-graduation-cap">Education</i></div>
+<div style="background-color:blue;float:right;width:80%;height:200px">
 <img src="images/education.png" style="float:left"></img>
 <div style="background-color:black;margin-top:7px;color:white;border:2px solid black;border-radius:2px">
 <p><b>B.Tech in EE at IIT Mandi</b></p>
@@ -175,16 +202,36 @@ Date of birth
 <p><i>Completed class XII from this school with 88%</i></p>
 </div>
 </div>
-<div  style="height:100px;width:100%;background-image:url('images/back.jpg')">
-<a href="#sk" id="c2"><i class="fas fa-check" style="color:blue;font-size:20px;margin-left:30px;margin-right:240px"></i></a><a href="#sk1"><i class="fas fa-chart-line" style="color:blue;font-size:20px;margin-right:240px"></i></a>
-<a href="#"><i class="fas fa-users" style="color:blue;font-size:20px;"></i></a>
+<ul class="center">
+<li>
+<button class="btn">
+<i class="fa fa-check"></i>
 <br>
-<span class="mod" style="margin-left:35px">1</span>
-<span class="mod">2</span>
-<span class="mod">300</span>
+1
 <br>
-<span style="margin-left:0px;color:white;margin-top:-1px;margin-right:150px">Projects Completed</span> <span style="color:white;margin-top:-1px;margin-right:150px">Projects Doing</span><span style="color:white;margin-top:-1px;">People Reached</span>
-</div>
+Projects Completed
+</button>
+</li>
+<li>
+<button class="btn">
+<i class="fa fa-chart-line"></i>
+<br>
+2
+<br>
+Projects
+<br> Doing
+</li>
+</button>
+<li>
+<button class="btn">
+<i class="fa fa-user"></i>
+<br>
+300
+<br>
+People Reached
+</button>
+</li>
+</ul>
 </div>
 </body>
 </html>
