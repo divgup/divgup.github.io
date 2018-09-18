@@ -1,0 +1,42 @@
+<DOCTYPE! html>
+<head>
+<style>
+.item1{
+grid-area:head;
+}
+.item2{
+grid-area:menu;
+}
+.item3{
+grid-area:main;
+}
+.item4{
+grid-area:right;
+}
+.item5{
+grid-area:footer;
+}
+.grid-container{
+display:grid;
+grid-template-areas:'head head head head''menu main main right''menu main main right''footer footer footer footer';
+background-color:DodgerBlue;
+}
+.grid-container > div{
+color:black;
+border:2px solid black;
+padding:10px;
+font-size:10px;
+background-color:rgba(255,0,255,0.8);
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="item1">header</div>
+<div class="item2" style="height:250px">menu</div>
+<div class="item3 style="height:250px">main</div>
+<div class="item4" style="height:250px">right</div>
+<div class="item5">footer</div>
+</div>
+</body>
+</html> 
